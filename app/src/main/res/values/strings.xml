@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ServingSizeCalculator</string>
+    <string name="add_pot">ADD POT</string>
+    <string name="select_a_pot_to_use">Select a pot to use:</string>
+</resources>
