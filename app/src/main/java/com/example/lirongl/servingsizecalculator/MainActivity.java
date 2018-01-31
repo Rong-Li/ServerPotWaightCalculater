@@ -89,6 +89,11 @@ public class MainActivity extends AppCompatActivity {
                 TextView textview = (TextView) viewClicked;
                 String message = "you clicked #" + position + ", which is string: "+ textview.getText();
                 Toast.makeText(MainActivity.this, message, Toast.LENGTH_LONG).show();
+                Pot temp = theCollection.getPot(position);
+                String a = temp.getName();
+                int b = temp.getWeightInG();
+                Intent intent = ThirdActivity.newIntent(MainActivity.this, a, b);
+                startActivity(intent);
             }
         });
     }
